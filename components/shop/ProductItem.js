@@ -1,9 +1,7 @@
-import React from "react";
-import {
-  View, Text, StyleSheet, Image, Button,
-} from "react-native";
+import React from 'react';
+import { View, Text, StyleSheet, Image, Button } from 'react-native';
 
-import Colors from "../../constants/Colors";
+import Colors from '../../constants/Colors';
 
 export default function ProductItem(props) {
   return (
@@ -33,30 +31,30 @@ export default function ProductItem(props) {
 
 const styles = StyleSheet.create({
   product: {
-    shadowColor: "black",
+    shadowColor: 'black',
     shadowOpacity: 0.26,
     shadowOffset: { whidth: 0, height: 2 },
     shadowRadius: 8,
     elevation: 5,
     borderRadius: 10,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     height: 300,
     margin: 20,
   },
   imageContainer: {
-    width: "100%",
-    height: "60%",
+    width: '100%',
+    height: '60%',
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
-    overflow: "hidden",
+    overflow: 'hidden',
   },
   image: {
-    width: "100%",
-    height: "100%",
+    width: '100%',
+    height: '100%',
   },
   details: {
-    alignItems: "center",
-    height: "15%",
+    alignItems: 'center',
+    height: '15%',
     padding: 10,
   },
   title: {
@@ -65,13 +63,13 @@ const styles = StyleSheet.create({
   },
   price: {
     fontSize: 14,
-    color: "#888",
+    color: '#888',
   },
   actions: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "center",
-    height: "25%",
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    height: '25%',
     paddingHorizontal: 20,
   },
 });

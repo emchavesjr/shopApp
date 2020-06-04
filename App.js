@@ -9,7 +9,6 @@ const rootReducer = combineReducers({
   products: productsReducer,
 });
 
-
 const store = createStore(rootReducer);
 
 export default function App() {

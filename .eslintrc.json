@@ -1,37 +1,29 @@
 {
-    "env": {
-        "es6": true,
-        "node": true
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "prettier"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
     },
-    "extends": [
-        "eslint:recommended",
-        "plugin:react/recommended",
-				"airbnb",
-				"airbnb/hooks"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-			"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-			"no-unused-vars": "off",
-			"no-use-before-define": "off",
-			"react/jsx-max-props-per-line": [2, { "when": "multiline" }],
-	 		"react/prop-types": [0],
-			"react/destructuring-assignment": [0],
-			"react/jsx-one-expression-per-line": [0],
-			"quotes": ["error", "double"],
-			"multiline-ternary": ["error", "always"]
-		}
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "prettier/prettier": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "no-use-before-define": "off",
+    "no-unused-vars": "off",
+    "react/destructuring-assignment": [0],
+    "react/prop-types": [0],
+    "react/jsx-one-expression-per-line": [0],
+		"max-len": ["error", { "code": 80 }]
+  }
 }
