@@ -1,8 +1,8 @@
-import React from 'react';
-import { FlatList } from 'react-native';
-import { useSelector } from 'react-redux';
+import React from "react";
+import { FlatList } from "react-native";
+import { useSelector } from "react-redux";
 
-import ProductItem from '../../components/shop/ProductItem';
+import ProductItem from "../../components/shop/ProductItem";
 
 export default function ProductOverviewScreen(props) {
   const products = useSelector((state) => state.products.availableProducts);
@@ -24,5 +24,5 @@ export default function ProductOverviewScreen(props) {
 }
 
 ProductOverviewScreen.navigationOptions = {
-  headerTitle: 'All Products',
+  headerTitle: "All Products",
 };

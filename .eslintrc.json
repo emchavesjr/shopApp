@@ -26,6 +26,12 @@
     "rules": {
 			"react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
 			"no-unused-vars": "off",
-			"no-use-before-define": "off"
+			"no-use-before-define": "off",
+			"react/jsx-max-props-per-line": [2, { "when": "multiline" }],
+	 		"react/prop-types": [0],
+			"react/destructuring-assignment": [0],
+			"react/jsx-one-expression-per-line": [0],
+			"quotes": ["error", "double"],
+			"multiline-ternary": ["error", "always"]
 		}
 }
